@@ -90,6 +90,7 @@ public class Challenge {
 
     }
 
+    //mostrar cantidad de memoria
     public static void showMemory(){
         for (int i = 0; i < memory.length ; i++) {
 
@@ -100,6 +101,7 @@ public class Challenge {
         }
     }
 
+    //dar valor a los null con ****
     public static void setMemory(int tam, String value)  {
         //recuperar(tam);
 
@@ -114,6 +116,7 @@ public class Challenge {
         }
     }
 
+    //mostrar capacidad de memoria en pantalla -----> usados/libre
     public static void startMemory (){
         for (int i = 0; i < memory.length ; i++) {
 
@@ -136,6 +139,33 @@ public class Challenge {
         }
         //clearMemory();************
     }
+
+
+    public static void recuperar (int tam)  {
+        for (int i = 0; i < memory.length ; i++) {
+
+            for (int j = 0; j < memory[i].length; j++) {
+                if(memory[i][j].equals(" **** ")){
+                    tam -= 1;
+                }
+            }
+        }
+        if(tam >= 0){
+        }else {
+
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
 
     /*
     public static void clearMemory(){
@@ -165,21 +195,4 @@ public class Challenge {
             }
         }
     }*/
-
-    public static void recuperar (int tam)  {
-        for (int i = 0; i < memory.length ; i++) {
-
-            for (int j = 0; j < memory[i].length; j++) {
-                if(memory[i][j].equals(" **** ")){
-                    tam -= 1;
-                }
-            }
-
-        }
-        if(tam >= 0){
-        }else {
-
-        }
-    }
-
 }
