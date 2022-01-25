@@ -3,6 +3,7 @@ package main;
 
 
 import java.text.DecimalFormat;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Challenge {
@@ -137,23 +138,16 @@ public class Challenge {
                 }
             }
         }
+        memoryOverflowException();
         //clearMemory();************
     }
 
 
-    public static void recuperar (int tam)  {
-        for (int i = 0; i < memory.length ; i++) {
 
-            for (int j = 0; j < memory[i].length; j++) {
-                if(memory[i][j].equals(" **** ")){
-                    tam -= 1;
-                }
-            }
-        }
-        if(tam >= 0){
-        }else {
+    public static void memoryOverflowException(){
 
-        }
+
+
     }
 
 
